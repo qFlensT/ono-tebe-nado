@@ -38,16 +38,14 @@ body {
 .header__logo {
   justify-self: center;
   align-self: start;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
   display: block;
-  width: 148px;
-  height: 105px;
-  background-image: url("../images/logo-black.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  height: 100%;
+  width: 100%;
 }
 
 .header__address {
