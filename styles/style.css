@@ -232,19 +232,21 @@ body {
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 430px 25px 1fr;
-  grid-template-rows: 100px 1fr;
+  display: flex;
+  gap: 25px;
   margin: 181px 50px 0;
 }
 
-.about__column:has(.about__logo) {
-  grid-row-end: span 2;
+.about__column {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
 }
 
 .about__logo {
   display: flex;
   justify-content: center;
+  width: 430px;
 }
 
 .about__logo-image {
@@ -258,8 +260,7 @@ body {
   background-size: 148px 114px;
 }
 
-.about__column:has(.about__title) {
-  grid-column-start: 3;
+.about__content {
   grid-row-start: 2;
 }
 
