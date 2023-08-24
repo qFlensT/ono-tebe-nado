@@ -93,8 +93,8 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
-  text-transform: uppercase;
   letter-spacing: 30px;
+  text-transform: uppercase;
 }
 
 .aligned-text_center {
@@ -136,14 +136,14 @@
 }
 
 .bet-button {
+  width: 257px;
+  height: 52px;
   border: 1px solid #fff;
   padding: 12px 32px;
   color: #fff;
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
-  width: 257px;
-  height: 52px;
 }
 
 .lots {
@@ -173,23 +173,23 @@
 }
 
 .card-link {
-  text-decoration: none;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 
 .card {
   position: relative;
   z-index: 1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
   padding: 50px 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -256,21 +256,21 @@
 }
 
 .about__title {
+  grid-row-start: 2;
   margin-bottom: 100px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  grid-row-start: 2;
 }
 
 .about__text {
   display: flex;
   flex-direction: column;
+  grid-row-start: 3;
   gap: 25px;
   color: #000;
   font-size: 20px;
-  grid-row-start: 3;
 }
 
 .footer {
