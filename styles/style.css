@@ -61,6 +61,10 @@
 .cover {
   position: relative;
   z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 135px;
+  padding: 165px 50px 50px;
   background-image: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -80,12 +84,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  /* margin работает странно с этим статическим элементом
-  когда родительский контейнер спозиционирован, он его двигает.
-  Я бы починил, но не знаю как. */
-
-  padding: 165px 50px 135px;
 }
 
 .aligned-text {
@@ -123,7 +121,6 @@
   justify-content: end;
   align-items: center;
   gap: 78px;
-  padding: 0 50px 50px;
 }
 
 .cover__description-text {
@@ -169,7 +166,7 @@
 .lots__card-list-item {
   flex-grow: 1;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
 }
 
 .card-link {
@@ -241,18 +238,16 @@
 .about__logo {
   display: flex;
   justify-content: center;
-  width: 430px;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  margin: 0 95px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about__logo-image {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  background-color: #000;
-  background-image: url("../images/logo-white.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 148px 114px;
+  margin: 63px 46px;
 }
 
 .about__title {
